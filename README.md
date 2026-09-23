@@ -100,3 +100,71 @@ Safety checks
      │
      ├── Protec
 ```
+
+## Install & run
+
+```powershell
+git clone <your-repo-url>
+cd sysagent
+pip install -r requirements.txt
+```
+
+Start the background daemon:
+
+```powershell
+python run_agent.py          # or start_agent.bat (headless)
+```
+
+Open the dashboard:
+
+```powershell
+python -m streamlit run dashboard.py    # or start_dashboard.bat
+```
+
+Then visit **http://localhost:8501**.
+
+> The agent ships with `"dry_run": true` in `config.json` — it simulates
+> everything first. Flip it off in the dashboard's **Settings** page when
+> you trust it.
+
+## Manual commands
+
+```powershell
+python run_agent.py --scan-storage    # one-off storage analysis
+python run_agent.py --scan-junk       # one-off junk cleanup
+python run_agent.py --weekly          # large files, duplicates, dev artifacts, apps
+python run_agent.py --health          # instant health report
+```
+
+## Default schedule
+
+| Task | Frequency |
+|---|---|
+| Storage check | Every 2 hours |
+| Junk cleanup + updates + health + quarantine purge | Daily |
+| Large files / duplicates / dev cleanup / apps / startup | Weekly (Sunday) |
+| Low-disk event trigger | Immediate cleanup when free space < 10% or < 20 GB |
+
+All timings and thresholds live in `config.json` (editable in the dashboard).
+
+## Project layout
+
+```
+sysagent/
+├── run_agent.py          # entry point (daemon + manual scans)
+├── dashboard.py          # Streamlit UI
+├── config.json           # all settings/thresholds
+├── core/                 # daemon, db (SQLite), safety/quarantine, notify
+├── modules/              # storage, junk, duplicates, largefiles, devclean,
+│                         # startup, uninstall, updates, health
+├── brain/                # LLM classification + learned-rule cache
+└── data/                 # gitignored: agent.db, quarantine/, logs/
+```
+
+## Requirements
+
+- Windows 10/11
+- Python 3.11+
+- [winget](https://learn.microsoft.com/windows/package-manager/) (for update checks)
+- Optional: `opencode` CLI for LLM classification of unknown files
+
