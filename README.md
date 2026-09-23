@@ -249,7 +249,6 @@ sysagent/
 * **Windows 10 / 11**
 * **Python 3.11+**
 * **winget** — for software update checks
-* **Optional:** `opencode` CLI — for LLM classification of unknown files
 
 ---
 
@@ -271,12 +270,3 @@ Some directions I'm exploring for future versions:
 The long-term idea is to move beyond a traditional **PC cleaner** and build something closer to an **AI system assistant that understands what is happening on your computer.**
 
 ---
-
-## 📌 Current Status
-
-**SysAgent is an actively developed prototype.**
-
-The core monitoring, analysis, safety, quarantine, approval, and AI-assisted classification systems are already in place, while the project continues to evolve toward a more capable system-level assistant.
-
-> **Your computer generates a lot of information. SysAgent's job is to make sense of it.**
-
