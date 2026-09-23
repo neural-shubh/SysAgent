@@ -1,0 +1,38 @@
+2026-09-21 08:42:25,178 INFO sysagent daemon starting (dry_run=True)
+2026-09-21 08:42:25,181 INFO running startup.storage
+2026-09-21 08:42:25,210 INFO startup.storage done: {'drives': [{'drive': 'C:\\', 'total_gb': 214.5, 'used_gb': 198.3, 'free_gb': 16.2}, {'drive': 'D:\\', 'total_gb': 244.1, 'used_gb': 13.4, 'free_gb': 230.8}], 'threshold_breaches': [{'drive': 'C:\\', 'free_gb': 16.22, 'free_percent': 7.6}]}
+2026-09-21 08:42:25,212 INFO running startup.health
+2026-09-21 08:42:27,534 INFO startup.health done: {'cpu_percent': 31.9, 'ram_percent': 69.8, 'boot_time': 1789692498.0454452, 'battery': {'percent': 92, 'plugged': True}, 'disk_read_gb': 284.2, 'top_processes': [{'name': 'MemCompression', 'cpu': 0, 'ram_mb': 1216.3}, {'name': 'chrome.exe', 'cpu': 0, 'ram_mb': 631.6}, {'name': 'SupportAssistAgent.ex
+2026-09-21 17:19:10,196 INFO sysagent daemon starting (dry_run=True)
+2026-09-21 17:19:10,198 INFO running startup.storage
+2026-09-21 17:19:10,238 INFO startup.storage done: {'drives': [{'drive': 'C:\\', 'total_gb': 214.5, 'used_gb': 199.3, 'free_gb': 15.2}, {'drive': 'D:\\', 'total_gb': 244.1, 'used_gb': 13.4, 'free_gb': 230.8}], 'threshold_breaches': [{'drive': 'C:\\', 'free_gb': 15.19, 'free_percent': 7.1}]}
+2026-09-21 17:19:10,239 INFO running startup.health
+2026-09-21 17:19:13,114 INFO startup.health done: {'cpu_percent': 56.4, 'ram_percent': 87.5, 'boot_time': 1789692496.67068, 'battery': {'percent': 86, 'plugged': False}, 'disk_read_gb': 354.8, 'top_processes': [{'name': 'OneDrive.exe', 'cpu': 0, 'ram_mb': 852.2}, {'name': 'Code.exe', 'cpu': 0, 'ram_mb': 651.6}, {'name': 'explorer.exe', 'cpu': 0, 'r
+2026-09-21 19:42:54,384 INFO running storage.scan
+2026-09-21 19:42:54,447 INFO storage.scan done
+2026-09-21 19:42:54,448 WARNING disk threshold breached: [{'drive': 'C:\\', 'free_gb': 15.33, 'free_percent': 7.1}] — triggering junk cleanup
+2026-09-21 19:42:54,478 INFO running junk.clean
+2026-09-21 19:47:47,731 INFO junk.clean done: {'candidates': 6883, 'auto_quarantined': 6883, 'pending_approval': 0, 'bytes_recovered': 1053043506, 'dry_run': True}
+2026-09-21 20:05:53,089 INFO sysagent daemon starting (dry_run=True)
+2026-09-21 20:05:53,090 INFO running startup.storage
+2026-09-21 20:05:53,131 INFO startup.storage done: {'drives': [{'drive': 'C:\\', 'total_gb': 214.5, 'used_gb': 199.2, 'free_gb': 15.3}, {'drive': 'D:\\', 'total_gb': 244.1, 'used_gb': 13.4, 'free_gb': 230.8}], 'threshold_breaches': [{'drive': 'C:\\', 'free_gb': 15.27, 'free_percent': 7.1}]}
+2026-09-21 20:05:53,132 INFO running startup.health
+2026-09-21 20:05:55,305 INFO startup.health done: {'cpu_percent': 25.4, 'ram_percent': 89.1, 'boot_time': 1789692496.6703784, 'battery': {'percent': 72, 'plugged': False}, 'disk_read_gb': 364.3, 'top_processes': [{'name': 'OneDrive.exe', 'cpu': 0, 'ram_mb': 842.4}, {'name': 'Code.exe', 'cpu': 0, 'ram_mb': 611.5}, {'name': 'Code.exe', 'cpu': 0, 'ram
+2026-09-23 07:41:35,339 INFO sysagent daemon starting (dry_run=False)
+2026-09-23 07:41:35,340 INFO running startup.storage
+2026-09-23 07:41:35,353 INFO startup.storage done: {'drives': [{'drive': 'C:\\', 'total_gb': 214.5, 'used_gb': 190.7, 'free_gb': 23.8}, {'drive': 'D:\\', 'total_gb': 244.1, 'used_gb': 13.4, 'free_gb': 230.8}], 'threshold_breaches': []}
+2026-09-23 07:41:35,353 INFO running startup.health
+2026-09-23 07:41:37,044 INFO startup.health done: {'cpu_percent': 25.1, 'ram_percent': 71.1, 'boot_time': 1789692496.6699922, 'battery': {'percent': 59, 'plugged': True}, 'disk_read_gb': 475.1, 'top_processes': [{'name': 'MemCompression', 'cpu': 0, 'ram_mb': 612.8}, {'name': 'chrome.exe', 'cpu': 0, 'ram_mb': 546.7}, {'name': 'OneDrive.exe', 'cpu': 
+2026-09-23 09:00:07,112 INFO running updates.scan
+2026-09-23 09:00:07,421 INFO updates.scan done: {'available': 0, 'error': 'Expecting value: line 1 column 3 (char 2)'}
+2026-09-23 09:46:47,471 INFO running storage.scan
+2026-09-23 09:46:48,013 INFO storage.scan done
+2026-09-23 12:19:42,974 INFO running storage.scan
+2026-09-23 12:19:43,015 INFO storage.scan done
+2026-09-23 13:50:54,984 INFO sysagent daemon starting (dry_run=False)
+2026-09-23 13:50:54,988 INFO running startup.storage
+2026-09-23 13:50:55,017 INFO startup.storage done: {'drives': [{'drive': 'C:\\', 'total_gb': 214.5, 'used_gb': 189.6, 'free_gb': 24.9}, {'drive': 'D:\\', 'total_gb': 244.1, 'used_gb': 13.4, 'free_gb': 230.8}], 'threshold_breaches': []}
+2026-09-23 13:50:55,018 INFO running startup.health
+2026-09-23 13:50:58,068 INFO startup.health done: {'cpu_percent': 34.1, 'ram_percent': 75.2, 'boot_time': 1789692494.9783964, 'battery': {'percent': 49, 'plugged': False}, 'disk_read_gb': 506.0, 'top_processes': [{'name': 'Code.exe', 'cpu': 0, 'ram_mb': 672.6}, {'name': 'chrome.exe', 'cpu': 0, 'ram_mb': 561.1}, {'name': 'Code.exe', 'cpu': 0, 'ram_m
+2026-09-23 14:19:46,854 INFO running storage.scan
+2026-09-23 14:19:46,913 INFO storage.scan done
